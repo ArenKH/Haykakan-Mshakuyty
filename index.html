@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Հայկական Մշակույթ</title>
+    <!-- Google Font (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Միացնում ենք առանձին CSS ֆայլը -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Նավիգացիա -->
+    <nav>
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="#home">Գլխավոր</a></li>
+            <li><a href="#about">Մասին</a></li>
+            <li><a href="#sections">Բաժիններ</a></li>
+            <li><a href="#contact">Կապ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Գլխավոր էջ (Hero) - Նկարի և կիսաթափանցիկ շերտի հատված -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Հայկական Մշակույթ</h1>
+            <p>Դարերի հարուստ ժառանգություն, արվեստ և հոգևոր արժեքներ</p>
+        </div>
+    </section>
+
+    <!-- Ընդհանուր տեղեկություն (Կոճակով բացվող բաժին) -->
+    <section id="about" class="intro-section-bg">
+        <div class="intro-overlay">
+            <div class="intro-content-box">
+                <h2>Մշակութային Ընդհանուր Ակնարկ</h2>
+                <p>Հայկական մշակույթը հայ ժողովրդի ստեղծած հոգևոր և նյութական արժեքների ամբողջությունն է։ Այն ձևավորվել է հազարավոր տարիների ընթացքում և իր մեջ ներառում է հայ ժողովրդի լեզուն, գրականությունը, պատմությունը, արվեստը, երաժշտությունը, ճարտարապետությունը, կրոնը և ավանդույթները։</p>
+
+                <!-- Այս մասը սկզբում թաքցված է, բացվում է կոճակին սեղմելիս -->
+                <div id="moreAboutText" style="display: none; margin-top: 15px;">
+                    <p>Հայկական մշակույթը շատ հին և հարուստ մշակույթներից է։ Հայկական լեռնաշխարհում դեռևս հնագույն ժամանակներից զարգացել են տարբեր քաղաքակրթություններ, որոնք իրենց հետքն են թողել այս տարածաշրջանի մշակույթի վրա։ Դարերի ընթացքում հայ ժողովուրդը ստեղծել է բազմաթիվ արժեքներ, որոնց մի մասը պահպանվել է մինչև մեր օրերը։</p>
+
+                    <p>Հայկական մշակույթի կարևորագույն ձեռքբերումներից մեկը հայոց այբուբենն է։ Այն ստեղծվել է Մեսրոպ Մաշտոցի կողմից 405 թվականին։ Այբուբենի ստեղծումը մեծ նշանակություն ունեցավ հայ ժողովրդի համար, քանի որ նպաստեց կրթության, գրականության և գիտության զարգացմանը։</p>
+
+                    <p>Հայկական մշակույթի կարևոր բաղադրիչ է նաև գրականությունը։ Հայ գրականության պատմությունը շատ հարուստ է։ Հին և միջնադարյան շրջանի հեղինակները գրի են առել պատմական իրադարձություններ, հոգևոր մտքեր և ժողովրդական ավանդություններ։ Հայ մշակույթի հայտնի գրողներից են Հովհաննես Թումանյանը, Ավետիք Իսահակյանը, Եղիշե Չարենցը և շատ ուրիշներ։</p>
+
+                    <p>Երաժշտությունն ու ազգային պարը նույնպես մեծ տեղ ունեն հայկական մշակույթում։ Հայկական երաժշտության հայտնի գործիքներից են դուդուկը, դհոլը, զուռնան, քանոնը և քամանչան։ Հայկական ազգային պարերից ամենահայտնիներից է Քոչարին, որը խորհրդանշում է ուժն ու միասնականությունը։ Հայկական ժողովրդական երաժշտության ուսումնասիրության և պահպանման գործում մեծ դեր է ունեցել Կոմիտասը։</p>
+
+                    <p>Հայկական մշակույթի կարևոր մաս է ճարտարապետությունը։ Հայաստանի տարածքում պահպանվել են բազմաթիվ հնագույն և միջնադարյան հուշարձաններ՝ տաճարներ, եկեղեցիներ, վանքեր, ամրոցներ և կամուրջներ։ Հայկական ճարտարապետության հայտնի օրինակներից են Գառնու տաճարը, Էջմիածնի Մայր Տաճարը, Գեղարդի վանքը և խաչքարերը։</p>
+
+                    <p>Հայկական մշակույթում կարևոր նշանակություն ունի նաև ազգային խոհանոցը։ Հայտնի ուտեստներից են տոլման, խաշը, հարիսան, խորովածը, գաթան, ժինգյալով հացը և լավաշը։</p>
+                </div>
+
+                <!-- Կոճակը, որին սեղմելիս տեքסטը կբացվի/կփակվի -->
+                <button id="toggleAboutBtn" class="btn-details" onclick="toggleAboutSection()" style="margin-top: 20px; cursor: pointer;">Կարդալ ավելին</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Բաժինների ցանկ -->
+    <section id="sections" class="sections-container">
+        <h2 class="section-title">Մշակութային Բաժիններ</h2>
+        <div class="grid">
+            
+            <!-- Բաժին 1 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6N1VNixpLc0Q8qZoqVe1gwSsIw32xvygwXQqXFS3fYne1kkRjGul2hVM&s=10" alt="Լեզու և գրականություն">
+                <div class="card-content">
+                    <div>
+                        <h3>Լեզու և Գրականություն</h3>
+                        <p>Հայոց լեզուն հնդեվրոպական ընտանիքի առանձին ճյուղ է: Հայոց գրերը ստեղծվել են 405 թվականին Մեսրոպ Մաշտոցի կողմից:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('lang')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+            <!-- Բաժին 2 -->
+            <div class="card">
+                <img src="https://ejmiatsin.am/media/main/2020-09/main_33_2020-09-15_13-36-21-55.jpg" alt="Եկեղեցի և հոգևոր մշակույթ">
+                <div class="card-content">
+                    <div>
+                        <h3>Եկեղեցի և Հոգևոր Մշակույթ</h3>
+                        <p>Հայաստանն առաջինն է պետականորեն ընդունել քրիստոնեությունը (301թ.): Հայ Առաքելական եկեղեցին մշակույթի պահպանման հիմնասյունն է:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('church')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+            <!-- Բաժին 3 -->
+            <div class="card">
+                <img src="https://armhoreca.am/wp-content/uploads/2025/10/1kopiya-13-1024x606.jpg" alt="Ճարտարապետություն">
+                <div class="card-content">
+                    <div>
+                        <h3>Ճարտարապետություն</h3>
+                        <p>Հայկական ճարտարապետությունը առանձնանում է իր յուրահատուկ գմբեթավոր տաճարներով, խաչքարերով և վանքային համալիրներով:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('arch')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+            <!-- Բաժին 4 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVgrKMeuxCoIcez1_e0D4Ygg_R205PtJmBuA-Jh1vPVg&s" alt="Երաժշտություն">
+                <div class="card-content">
+                    <div>
+                        <h3>Երաժշտություն</h3>
+                        <p>Հայկական երաժշտությունը հիմնված է խազագրության և ժողովրդական գործիքների վրա (դուդուկ, շվի, քանոն): Հայտնի է Կոմիտասի մեծ ժառանգությունը:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('music')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+            <!-- Բաժին 5 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7lIw-sVDJbKNR5YNA3cRcH322TVJYZz5xjd_H2NpjA&s=10" alt="Պար">
+                <div class="card-content">
+                    <div>
+                        <h3>Պար</h3>
+                        <p>Հայկական ազգային պարերը (Քոչարի, Բերդ, Յարխուշտա) արտահայտում են հայ մարդու մարտական ոգին, աշխատասիրությունն ու ազատատչ բնույթը:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('dance')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+            <!-- Բաժին 6 -->
+            <div class="card">
+                <img src="https://www.shantnews.am/wp-content/uploads/2025/07/522113636_1068206088834938_9032311963712182246_n-683x1024.jpg" alt="Արհեստներ">
+                <div class="card-content">
+                    <div>
+                        <h3>Արհեստներ</h3>
+                        <p>Հայաստանում հնագույն ժամանակներից զարգացած են եղել գորգագործությունը, խեցեգործությունը, ժանեկագործությունը և մետաղագործությունը:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('crafts')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+            <!-- Բաժին 7 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTyutUclcWB2dRH87bNGnyRh1pnab77cEeN-fufoOD-w&s=10" alt="Խոհանոց">
+                <div class="card-content">
+                    <div>
+                        <h3>Խոհանոց</h3>
+                        <p>Հայկական խոհանոցը ամենահներից է տարածաշրջանում: Հայտնի է իր խորովածով, լավաշով, հարիսայով, դոլմայով և բազմազան մրգերով:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('food')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+            <!-- Բաժին 8 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv8F5Dl4ES61Oueu47cqNggMdzNH5ONCBBm3St27LJNA&s=10" alt="Տոներ և ավանդույթներ">
+                <div class="card-content">
+                    <div>
+                        <h3>Տոներ և Ավանդույթներ</h3>
+                        <p>Ազգային տոները (Տրնդեզ, Վարդավառ, Բարեկենդան) ուղեկցվում են հնագույն ծեսերով, երգերով ու խնջույքներով, որոնք փոխանցվում են սերնդեսերունդ:</p>
+                    </div>
+                    <button class="btn-details" onclick="openModal('holidays')">Կարդալ ավելին</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Մոդալ պատուհան (Popup) -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Վերնագիր</h2>
+            <p id="modalText">Մանրամասն տեղեկությունները բեռնվում են...</p>
+        </div>
+    </div>
+
+    <!-- Հետնամաս (Footer) -->
+    <footer id="contact">
+        <p>&copy; 2026 Հայկական Մշակույթ | Բոլոր իրավունքները պաշտպանված են</p>
+    </footer>
+
+    <!-- Միացնում ենք առանձին JS ֆայլը -->
+    <script src="script.js"></script>
+</body>
+</html>
